@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  description: "Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/)\
+    \ or HTML."
+  termsOfService: ""
+  title: API Documentation Practice
+  version: "3.0"
+servers:
+- url: /
+paths:
+  /health:
+    get:
+      operationId: healthGET
+      responses:
+        "200":
+          description: OK
+      tags:
+      - health
+      x-eov-operation-handler: controllers/HealthController
+components:
+  schemas: {}
