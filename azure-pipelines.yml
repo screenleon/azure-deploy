@@ -21,7 +21,6 @@ steps:
 - task: DockerCompose@0
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Azure subscription 1(1)(b9d80ac5-9a5f-4d09-a66d-dd2e6f29a80f)'
     dockerComposeFile: '**/docker-compose.yaml'
     action: 'Run a Docker Compose command'
     dockerComposeCommand: 'docker-compose up --build'
